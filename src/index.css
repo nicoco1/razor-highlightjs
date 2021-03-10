@@ -1,0 +1,14 @@
+.hljs-built_in {
+    background: yellow;
+    color: black;
+}
+.hljs-tag {
+    color: blue;
+}
+
+span.hljs-name {
+    color: #96220e;
+}
+.hljs-attr {
+    color: red;
+}
