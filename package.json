@@ -1,12 +1,28 @@
 {
-  "name": "razor-hljs",
+  "name": "razor-highlightjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Razor file syntax highlighting for react or JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nicola Sedda",
+  "homepage": "https://razor-highlightjs.netlify.app/",
+  "bugs": {
+    "url": "https://github.com/nicoco1/razor-highlightjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicoco1/razor-highlightjs"
+  },
+  "keywords": [
+    "highlight",
+    "syntax",
+    "razor",
+    "cshtml",
+    "react",
+    "javascript"
+  ],
   "license": "ISC",
   "dependencies": {
     "create-react-app": "^4.0.3",
