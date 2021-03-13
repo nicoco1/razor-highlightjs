@@ -1,57 +1,50 @@
 {
-    "name": "@nicoco1/razor-highlightjs",
-    "version": "1.0.3",
-    "description": "Razor file syntax highlighting for react or JavaScript",
-    "main": "dist/index.js",
-    "scripts": {
-        "build": "rollup -c",
-        "start": "rollup -c -w",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Nicola Sedda",
-    "homepage": "https://razor-highlightjs.netlify.app/",
-    "bugs": {
-        "url": "https://github.com/nicoco1/razor-highlightjs/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nicoco1/razor-highlightjs.git"
-    },
-    "files": [
-        "dist"
-    ],
-    "keywords": [
-        "highlight",
-        "syntax",
-        "razor",
-        "cshtml",
-        "react",
-        "javascript"
-    ],
-    "license": "ISC",
-    "dependencies": {
-        "highlight.js": "^10.6.0",
-        "highlightjs-cshtml-razor": "^2.0.1"
-    },
-    "peerDependencies": {
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1"
-    },
-    "directories": {
-        "example": "example"
-    },
-    "devDependencies": {
-        "@types/highlight.js": "^9.12.3",
-        "@types/node": "^14.14.33",
-        "@types/react": "^17.0.3",
-        "@types/react-dom": "^17.0.2",
-        "babel-core": "^6.26.3",
-        "babel-runtime": "^6.26.0",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "rollup": "^2.41.1",
-        "rollup-plugin-sass": "^1.2.2",
-        "rollup-plugin-typescript2": "^0.30.0",
-        "typescript": "^4.2.3"
-    }
+  "name": "@nicoco1/razor-highlightjs",
+  "version": "1.0.1",
+  "description": "Razor file syntax highlighting for react or JavaScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicola Sedda",
+  "homepage": "https://razor-highlightjs.netlify.app/",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "highlight",
+    "syntax",
+    "razor",
+    "cshtml",
+    "react",
+    "javascript"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "highlight.js": "^10.6.0",
+    "highlightjs-cshtml-razor": "^2.0.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {
+    "@types/highlight.js": "^9.12.3",
+    "@types/node": "^14.14.33",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^2.41.1",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3"
+  }
 }
