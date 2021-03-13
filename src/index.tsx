@@ -1,3 +1,4 @@
-import * as RazorEditorImport from './react/RazorEditor';
+import * as RazorTextAreaImport from './react/RazorTextArea';
+import './styles/index.scss';
 
-export const RazorEditor = RazorEditorImport.RazorEditor;
+export const RazorTextArea = RazorTextAreaImport.RazorTextArea;

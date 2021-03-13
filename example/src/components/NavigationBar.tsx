@@ -1,10 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { Box, Flex, Text, IconButton, Stack, Collapse, Icon, Link, Popover, PopoverTrigger, PopoverContent, useColorModeValue, useBreakpointValue, useDisclosure } from '@chakra-ui/react';
+import { Box, Flex, Text, IconButton, Stack, Collapse, Icon, Link, Popover, PopoverTrigger, PopoverContent, useColorModeValue, useBreakpointValue, useDisclosure, useColorMode } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons';
-import { Github } from '@styled-icons/bootstrap';
+import { Github as GithubIcon } from '@styled-icons/bootstrap/Github';
+import { MoonFill as MoonFillIcon } from '@styled-icons/bootstrap/MoonFill';
+import { SunFill as SunFillIcon } from '@styled-icons/bootstrap/SunFill';
 
 export const NavigationBar = () => {
     const { isOpen, onToggle } = useDisclosure();
+    const { colorMode, toggleColorMode } = useColorMode();
 
     return (
         <Box>
@@ -23,8 +26,9 @@ export const NavigationBar = () => {
                 </Flex>
 
                 <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-                    <a href='https://github.com/nicoco1/razor-highlightjs' target="_blank" rel="noreferrer">
-                        <IconButton variant='unstyled' aria-label='Github' size='xs' icon={<Github />} />
+                    <IconButton onClick={toggleColorMode} variant='unstyled' aria-label={colorMode === 'light' ? 'Dark mode' : 'Light mode'} size='xs' icon={colorMode === 'light' ? <MoonFillIcon /> : <SunFillIcon />} />
+                    <a href='https://github.com/nicoco1/razor-highlightjs' target='_blank' rel='noreferrer'>
+                        <IconButton variant='unstyled' aria-label='Github' size='xs' icon={<GithubIcon />} />
                     </a>
                 </Stack>
             </Flex>
