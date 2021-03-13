@@ -36,9 +36,9 @@ jobs:
       with:
         commit-message: 'CI: bumps version to {{version}} [skip ci]'
     
-    - uses: actions/setup-node@v2
     - name:  'publish NPM Package'
-    # Setup .npmrc file to publish to npm
+      uses: actions/setup-node@v2
+      # Setup .npmrc file to publish to npm
       with:
         node-version: ${{ matrix.node-version }}
         registry-url: 'https://registry.npmjs.org'
